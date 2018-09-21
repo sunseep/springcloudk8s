@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: organization
+spec:
+  selector:
+    app: organization
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8090
+  type: NodePort
